@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test file</title>
+    <style>
+        h1 {
+            /* display: none; */
+            /* visibility: hidden; still in DOM and space is visible */
+            color: blue !important;
+        }
+        /* avoid negative margins as much as possible */
+        .hello {
+            color: red; /* class overrides elements; order of precedence*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit modi enim culpa accusamus? Nam facere ullam sunt possimus excepturi, neque quis blanditiis tempora iste. Deleniti earum sequi aperiam esse iure!</p>
+</body>
+</html>
