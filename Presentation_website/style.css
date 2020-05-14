@@ -3,7 +3,7 @@
     --page-2-color: tan;
     --page-3-color: teal;
     --page-4-color: slateblue;
-    --animate-speed: 1s;
+    --animate-speed: 2s;
 }
 
 body {
@@ -72,3 +72,54 @@ body {
     color: #333;
 }
 
+/* Animatiions  My try
+#page-1 h1 {
+    position: relative;
+    animation: fall-in 1s ease-in alternate forwards;
+}
+
+@keyframes fall-in {
+    from {
+        top: -350px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+#page-1 p {
+    position: relative;
+    animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+        left: -1500px;
+    }
+    to {
+        left: 0;
+    }
+} */
+
+/* Page Animations */
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) ease-in forwards;
+}
+
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#page-1 p {
+    transform: translateX(-1800px);
+    animation: text var(--animate-speed) ease-in 1s forwards;
+}
+
+@keyframes text {
+    to {
+        transform: translateX(0);
+    }
+}
